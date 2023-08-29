@@ -7,20 +7,29 @@
     <title>Toboolist</title>
   </head>
   <body>
+    <!-- HEADER -->
+
     <header class="main-header">
       <img src="./img/Logo.png" alt="Logo Boolean" class="logo" />
       Toboolist
     </header>
 
+    <!-- MAIN -->
+
     <main>
       <div class="container">
+        <!-- DIV BUTTONS -->
+
         <div class="buttons">
           <button class="btn primary">Add Task</button>
           <button class="btn secondary">Add Section</button>
         </div>
+
+        <!-- SECTION TODO-LIST -->
+
         <section class="todo-lists">
           <ul class="tasks">
-            <li class="list-title">
+            <li class="task-title">
               <img
                 src="./img/triangle-down-svgrepo-com.svg"
                 alt="Arrow Down"
@@ -29,8 +38,65 @@
               New Task
             </li>
 
-            <li>
-              <span class="checked">&check;</span> Quarterly Newsletter
+            <li class="task-item">
+              <span class="checked">&check;</span>Quarterly Newsletter
+              <span class="category blue">Editorial</span>
+            </li>
+          </ul>
+
+          <ul class="tasks">
+            <li class="task-title">
+              <img
+                src="./img/triangle-down-svgrepo-com.svg"
+                alt="Arrow Down"
+                class="arrow"
+              />
+              Today
+            </li>
+
+            <li class="task-item">
+              <span class="checked">&check;</span>Recruiting blog post
+              <span class="category blue">Editorial</span>
+            </li>
+            <li class="task-item">
+              <span class="checked">&check;</span>Mobile app luaunch
+              <span class="category darkblue">Q1 Goals</span>
+            </li>
+            <li class="task-item">
+              <span class="unchecked">&#x2715;</span>Interview John H.
+              <span class="category pink">Recruiting</span>
+            </li>
+            <li class="task-item">
+              <span class="checked">&check;</span>Summit update to mobile
+              storefronts
+              <span class="category orange">Mobile</span>
+            </li>
+          </ul>
+
+          <ul class="tasks">
+            <li class="task-title">
+              <img
+                src="./img/triangle-down-svgrepo-com.svg"
+                alt="Arrow Down"
+                class="arrow"
+              />
+              Upcoming
+            </li>
+
+            <li class="task-item">
+              <span class="unchecked">&#x2715;</span>Schedule meeting with Alex
+            </li>
+            <li class="task-item">
+              <span class="checked">&check;</span>Homepage refresh
+              <span class="category pink">Website</span>
+            </li>
+            <li class="task-item">
+              <span class="checked">&check;</span>Onboard new Sales team members
+              <span class="category orange">Sales</span>
+            </li>
+            <li class="task-item">
+              <span class="checked">&check;</span>Review editorial calendar
+              storefronts
               <span class="category blue">Editorial</span>
             </li>
           </ul>

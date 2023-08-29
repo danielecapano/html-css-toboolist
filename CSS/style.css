@@ -33,7 +33,7 @@ body {
 /* MAIN */
 
 .container {
-    max-width: 1100px;
+    max-width: 900px;
     margin: 0 auto;
     background-color: #fff;
     border-radius: 6px;
@@ -74,27 +74,47 @@ body {
     padding: 50px;
 }
 
-.list-title {
+.tasks {
+    margin-bottom: 40px;
+}
+
+.task-title {
     font-size: 20px;
     font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.task-item {
+    margin-bottom: 15px;
 }
 
 .arrow {
-    width: 20px;
+    width: 15px;
     vertical-align: middle;
 }
 
-.checked {
+.checked,
+.unchecked {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     font-size: 12px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.checked {
     border: 1px solid #66c0aa;
     color: #66c0aa;
-    text-align: center;
-    line-height: 20px;
-    border-radius: 50%;
 }
+
+.unchecked {
+    border: 1px solid #ef7d76;
+    color: #ef7d76;
+}
+
 
 .category {
     display: inline-block;
@@ -103,6 +123,8 @@ body {
     border-radius: 10px;
     color: #fff;
 }
+
+/* COLOR CATEGORY */
 
 .blue {
     background-color: #45abea;
