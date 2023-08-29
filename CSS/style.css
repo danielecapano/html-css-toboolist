@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+ul,
+ol {
+    list-style: none;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f6f8f9;
@@ -32,13 +37,14 @@ body {
     margin: 0 auto;
     background-color: #fff;
     border-radius: 6px;
-    padding: 0 50px;
 }
 
 /* BUTTONS */
 
 .buttons {
-    padding: 20px 0 10px;
+    width: 100%;
+    padding: 20px 50px 10px;
+    border-bottom: 2px solid #f6f8f9;
 }
 
 .btn {
@@ -60,4 +66,56 @@ body {
     background-color: transparent;
     color: #d2d7da;
     border: 1px solid #d2d7da;
+}
+
+/* SSECTION TODO-LISTS */
+
+.todo-lists {
+    padding: 50px;
+}
+
+.list-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.arrow {
+    width: 20px;
+    vertical-align: middle;
+}
+
+.checked {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    border: 1px solid #66c0aa;
+    color: #66c0aa;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+}
+
+.category {
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.blue {
+    background-color: #45abea;
+}
+
+.darkblue {
+    background-color: #9c72e4;
+}
+
+.pink {
+    background-color: #64c0a9;
+}
+
+.orange {
+    background-color: #f29e33;
 }
