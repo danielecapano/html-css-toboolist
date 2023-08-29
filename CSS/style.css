@@ -68,7 +68,7 @@ body {
     border: 1px solid #d2d7da;
 }
 
-/* SSECTION TODO-LISTS */
+/* SECTION TODO-LISTS */
 
 .todo-lists {
     padding: 50px;
@@ -118,7 +118,7 @@ body {
 
 .category {
     display: inline-block;
-    font-size: 12px;
+    font-size: 10px;
     padding: 5px 10px;
     border-radius: 10px;
     color: #fff;
