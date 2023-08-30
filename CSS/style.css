@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 * {
     padding: 0;
@@ -11,8 +11,11 @@ ol {
     list-style: none;
 }
 
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
     background-color: #f6f8f9;
 }
 
@@ -21,7 +24,6 @@ body {
 .main-header {
     background-color: #fff;
     padding: 10px 20px;
-    margin-bottom: 60px;
     font-size: 40px;
     font-weight: 700;
 }
@@ -30,20 +32,32 @@ body {
     vertical-align: middle;
 }
 
-/* MAIN */
+/* CARD */
+
+
+.main-content {
+    padding: 40px 20px;
+}
 
 .container {
     max-width: 900px;
     margin: 0 auto;
-    background-color: #fff;
-    border-radius: 6px;
 }
 
-/* BUTTONS */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+}
 
-.buttons {
-    width: 100%;
-    padding: 20px 50px 10px;
+.card__header,
+.card__body {
+    padding-inline: 50px;
+}
+
+/* CARD HEADER */
+
+.card__header {
+    padding-block: 20px 10px;
     border-bottom: 2px solid #f6f8f9;
 }
 
@@ -52,7 +66,6 @@ body {
     outline: none;
     border-radius: 3px;
     padding: 5px 10px;
-    font-family: Arial, sans-serif;
     font-weight: 400;
     font-size: 12px;
 }
@@ -68,59 +81,72 @@ body {
     border: 1px solid #d2d7da;
 }
 
-/* SECTION TODO-LISTS */
+/* CARD BODY */
 
-.todo-lists {
-    padding: 50px;
+.card__body {
+    padding-block: 50px;
 }
 
-.tasks {
-    margin-bottom: 40px;
+.task {
+    margin-bottom: 30px;
 }
 
-.task-title {
+.task:last-child {
+    margin-bottom: 0;
+}
+
+.task__title {
     font-size: 20px;
-    font-weight: 700;
+    margin-bottom: 100px;
+}
+
+.task__item {
+    font-size: 16px;
+    font-weight: 400;
     margin-bottom: 15px;
 }
 
-.task-item {
-    margin-bottom: 15px;
+.task__item:last-child {
+    margin-bottom: 0;
 }
 
-.arrow {
-    width: 15px;
-    vertical-align: middle;
+.task__list {
+    padding-top: 15px;
 }
+
+
 
 .checked,
 .unchecked {
     display: inline-block;
     width: 18px;
-    height: 18px;
+    aspect-ratio: 1 / 1;
     font-size: 12px;
     text-align: center;
-    line-height: 18px;
+    line-height: 16px;
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right: 10px;
+    border: 1px solid;
 }
 
 .checked {
-    border: 1px solid #66c0aa;
+    border-color: #66c0aa;
     color: #66c0aa;
 }
 
 .unchecked {
-    border: 1px solid #ef7d76;
+    border-color: #ef7d76;
     color: #ef7d76;
 }
 
 
 .category {
     display: inline-block;
+    vertical-align: middle;
     font-size: 10px;
-    padding: 5px 10px;
-    border-radius: 10px;
+    line-height: 24px;
+    padding-inline: 10px;
+    border-radius: 12px;
     color: #fff;
 }
 
